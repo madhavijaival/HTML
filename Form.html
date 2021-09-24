@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Form lesson</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <br>
+        <label for="username">Enter your Username:</label>
+        <input id="username" type="text" placeholder="Username" name="username">
+        </br>
+        <br>
+        <label for="password">Enter your password:</label>
+        <input id="password" type="password" placeholder="Password" name="password">
+        </br>
+        <br>
+        <label for="color">Select color:</label>
+        <input id="color" type="color" name="color">
+        </br>
+        <br>
+        <label>Enter number:
+            <input type="number" placeholder="enter a number" name="number">
+        </label>
+        </br>
+        <button>Submit</button>
+        <input type="submit" value="Click me!">
+
+    </form>
+    <hr>
+    <!--Outside of the form dosen't behave-->
+    <button>Outside of form</button>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search for reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search for Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search for youtube</button>
+    </form>
+    <h1> More Inputs!</h1>
+    <form action="/birds">
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree for everything</label>
+        <h2>Select gender:</h2>
+        <p>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </p>
+        <p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </p>
+        <p>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <p>
+            <label for="city">Select your city</label>
+            <select name="city" id="city">
+                <option value="Sunnyvale">Sunnyvale</option>
+                <option value="San francisco">San Francisco</option>
+                <option value="San Jose"> San Jose</option>
+            </select>
+
+        </p>
+        <p>
+            <label for="fav">Enter you choice for city on scale</label>
+            <input type="range" id="fav" value="5" min="1" max="10" name="favourite_city">
+        </p>
+        <p>
+            <label for="textinput">Type here anythig you want!</label>
+            <br>
+            <textarea name="textinput" id="textinput" cols="30" rows="10"
+                placeholder="Type something here..."></textarea>
+        </p>
+        <button>Register</button>
+    </form>
+    <h1>Validation Demo</h1>
+    <form action="/dummy">
+        <label for="first">Enter first name: </label>
+        <input type="text" name"first" id="first" required>
+        <p>
+            <input type="email" required>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
